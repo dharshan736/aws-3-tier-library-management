@@ -50,7 +50,7 @@ A role-based library management application built with Flask, SQLAlchemy, MySQL,
 
 The application can run locally with SQLite, or in production as the AWS three-tier deployment shown below.
 
-![AWS three-tier architecture](3-tier.png)
+![AWS three-tier architecture](3-tier-architecture.png)
 
 The production traffic flow is:
 
@@ -84,7 +84,7 @@ The web and app tiers run across multiple Availability Zones for resilience. The
 ├── schema.sql                # MySQL schema
 ├── requirements.txt          # Python dependencies
 ├── Procfile                  # Gunicorn production command
-├── 3-tier.png                # AWS production architecture diagram
+├── 3-tier-architecture.png   # AWS production architecture diagram
 ├── AWS_DEPLOYMENT_GUIDE.md   # Detailed AWS walkthrough
 ├── Websever/                 # Frontend pages and browser scripts
 │   ├── index.html
