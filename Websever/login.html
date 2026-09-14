@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter & Co. | Sign in</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-intro">
+      <a class="brand" href="/">chapter<span>&</span>co.</a>
+      <div class="intro-copy">
+        <p class="eyebrow">A quieter way to run your library</p>
+        <h1>Every story,<br><em>right on time.</em></h1>
+        <p>Keep the collection discoverable, the shelves moving, and every borrowing moment beautifully simple.</p>
+      </div>
+      <div class="intro-footer"><span>EST. 2026</span><span>LIBRARY OPERATIONS</span></div>
+    </section>
+    <section class="auth-card">
+      <div class="auth-heading"><p class="eyebrow">Welcome back</p><h2>Sign in to your desk</h2><p>Choose your access lane to continue.</p></div>
+      <div class="role-picker" role="tablist">
+        <button class="role-option is-selected" data-role="borrower">Borrower<span>Browse & borrow</span></button>
+        <button class="role-option" data-role="librarian">Librarian<span>Manage the shelves</span></button>
+        <button class="role-option" data-role="admin">Admin<span>Oversee the system</span></button>
+      </div>
+      <form id="login-form" class="stack-form">
+        <label>Email address<input type="email" name="email" value="borrower@library.local" placeholder="you@example.com" required></label>
+        <label>Password<input type="password" name="password" value="borrower123" placeholder="Your password" required></label>
+        <p id="login-error" class="form-error" role="alert"></p>
+        <button class="button button-dark button-wide" type="submit">Enter the library <span>→</span></button>
+      </form>
+      <p class="demo-note">Demo access is pre-filled. Admin: <b>admin123</b> · Librarian: <b>librarian123</b></p>
+    </section>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>

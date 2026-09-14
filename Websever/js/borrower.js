@@ -1,0 +1,2 @@
+const today = document.querySelector('#today'); if (today) today.textContent = new Date().toLocaleDateString('en-US', {month:'short', day:'numeric'}).toUpperCase();
+const refreshBorrower = async () => { const search = document.querySelector('#book-search')?.value || ''; const books = await api(`/api/books?search=${encodeURIComponent(search)}`); renderBooks(books, true); }; document.querySelector('#book-search')?.addEventListener('input', refreshBorrower);
