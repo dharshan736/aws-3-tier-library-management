@@ -4,3 +4,8 @@ __pycache__/
 .env
 library.db
 instance/
+
+# Deployment files kept out of future automatic staging
+Procfile
+.env.example
+nginx-webserver.conf
